@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.contenido {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+h1 i {
+    color: #1A8CD8;
+}
+
+.comentarios {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+
+
+form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.posteos {
+    width: 50%;
+    padding: 20px;
+}
+
+#formulario label {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+textarea {
+    padding: 7px;
+}
+
+.button {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #1A8CD8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    width: 100%;
+    padding: 25px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul a {
+    text-decoration: none;
+    color: #1A8CD8;
+}
+
+.error {
+    width: 100%;
+    border: 2px solid red;
+    background-color: rgb(243, 89, 89);
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.borde-error {
+    border: 1px solid red;
+}
+
+.borrar-tweet,
+.borrar-tweet:hover {
+    float: right;
+    cursor: pointer;
+    color: #1A8CD8;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .comentarios {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .posteos {
+        width: 100%;
+    }
+}
